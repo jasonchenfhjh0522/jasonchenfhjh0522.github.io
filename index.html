@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--problem_6(b)-->
+<style>
+a.class1:hover {
+  color:red;
+}
+</style>
+
+<!--problem_4-->
+<link rel="icon" href="page_tag.png">
+
+<title>B08502048 Homepage</title>
+
+</head>
+
+<body>
+
+<!--problem_6(a)-->
+<h1 style="color:blue;">陳杰伸 B08502048</h1>
+
+<!--problem_3-->
+<img src="my_photo.jpg" alt="my photo" width="300" height="330">
+
+<p><strong>自我介紹：</strong></p>
+
+<!--problem_1-->
+<p>
+	高中
+	<a href="http://www.fhjh.tp.edu.tw/dispPageBox/mainHP.html" class="class1">
+	復興實中
+	</a>
+	<br>
+	大學
+	<a href="https://web.ee.ntu.edu.tw/" class="class1">
+	臺大電機系
+	</a>
+</p>
+
+<!--problem_2-->
+<p>
+	1.喜歡美國職棒
+	<a href="https://www.mlb.com/yankees">
+	洋基隊
+	</a>
+	<br>
+	2.喜歡玩
+	<a href="https://www.facebook.com/mlb9inningstw/">
+	9局職業棒球
+	</a>
+	<br>
+	3.喜歡畫
+	<a href="https://store.line.me/stickershop/product/13033706/zh-Hant">
+	Line貼圖
+	</a>
+</p>
+
+<!--problem_5-->
+<audio controls autoplay loop>
+  <source src="background_music.mp3" type="audio/mpeg">
+</audio>
+
+<!--problem_7-->
+<p><span id="datetime"></span></p>
+<script>
+function time(){
+	var dt = new Date();
+	document.getElementById("datetime").innerHTML = 
+		(dt.getMonth()+1) +"-"+ 
+		(dt.getDate()) +"-"+ 
+		(dt.getFullYear()) +" "+ 
+		(("0"+dt.getHours()).slice(-2)) +":"+ 
+		(("0"+dt.getMinutes()).slice(-2)) +":"+ 
+		(("0"+dt.getSeconds()).slice(-2));
+	setTimeout(time, 1000);
+}
+time();
+</script>
+
+</body>
+</html>
